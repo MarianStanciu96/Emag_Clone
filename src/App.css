@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: white;
+  color: white;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 5px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+}
+
+.user-cart a {
+  margin-left: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.navigation-menu ul {
+  display: flex;
+  list-style-type: none;
+  background-color: #343a40;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.navigation-menu ul li {
+  margin: 0 20px;
+}
+
+.navigation-menu ul li:last-child {
+  margin-left: auto;
+}
+
+.navigation-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Base styling for the navigation menu */
+.navigation-menu {
+  background-color: #333;
+}
+
+.navigation-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navigation-menu li {
+  float: left;
+}
+
+.navigation-menu li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigation-menu li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+/* Dropdown container */
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #1129b1;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 8px 0;
+  text-decoration: none;
+  display: block;
+  width: calc(33.33% - 20px);
+  text-align: left;
+}
+
+/* Show dropdown content when active */
+.dropdown.open .dropdown-content {
+  display: block; /* Make the dropdown visible */
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd; /* Optional: background color for hovered items */
+}
